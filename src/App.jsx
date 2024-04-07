@@ -26,8 +26,14 @@ function App() {
     if (e.target.className === "overlay") setShowModal(false)
     if (e.key === "Escape") setShowModal(false)
   }
-  
 
+  // add user
+  const addUser = (user) => {
+    setUser((prev) => {
+      return [...prev, user]
+    })
+  }
+  
   return (
     <div onClick={closeModal} onKeyDown={closeModal} className="App">
       <Navbar usersLength={users.length}/>
@@ -37,7 +43,7 @@ function App() {
           </div>
           <UserList users={users} deleteUser={deleteUser}/>
         </main>
-        {showModal && <NewUserFrom/>}
+        {showModal && <NewUserFrom addUser={addUser}/>}
         <button onClick={() => setShowModal(true)} className='create-user'>Create User</button>
       <Footer/>
     </div>
