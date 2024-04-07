@@ -1,8 +1,22 @@
-# React + Vite
+# [`CUser`](https://c-user-react.vercel.app/) 
+## React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## [Watch Online `CUser`](https://c-user-react.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# ___`Run`___
+### node_modules
+```bash
+npm i
+```
+
+### compiler
+```bash
+npm run dev
+```
+
+### 💻 local host
+```bash
+http://localhost:5173/
+```
