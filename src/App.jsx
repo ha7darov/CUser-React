@@ -47,11 +47,3 @@ function App() {
 export default App
 
 
-//   id: 1,
-//   image: 'https://picsum.photos/400?random=1',
-//   firstName: 'Jasur',
-//   lastName: 'Haydarov',
-//   age: 18,
-//   from: 'Uzbekistan',
-//   job: 'Front End Developer',
-//   gender: 'Male',

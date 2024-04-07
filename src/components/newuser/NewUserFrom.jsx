@@ -1,9 +1,22 @@
 // style
 import './NewUserForm.css'
-
-import React from 'react'
+import { useState } from 'react'
+import {v4 as uuidv4} from 'uuid'
 
 function NewUserFrom() {
+    const [user, setUser] = useState({
+        id: uuidv4(),
+        image: '',
+        firstName: '',
+        lastName: '',
+        age: null,
+        from: '',
+        job: '',
+        gender: '',
+    })
+
+    console.log(user);
+
   return (
     <div className='modal-wrapper'>
         <div className='overlay'>
@@ -12,7 +25,7 @@ function NewUserFrom() {
                 <form >
                     <label>
                         <span>Image URL:</span>
-                        <input type="url"/>
+                        <input type="url" required/>
                     </label>
                     <label>
                         <span>First Name:</span>
