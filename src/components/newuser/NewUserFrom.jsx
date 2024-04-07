@@ -12,7 +12,7 @@ function NewUserFrom() {
                 <form >
                     <label>
                         <span>Image URL:</span>
-                        <input type="url" required />
+                        <input type="url"/>
                     </label>
                     <label>
                         <span>First Name:</span>

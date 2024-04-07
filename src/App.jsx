@@ -21,8 +21,15 @@ function App() {
     })
   }
 
+  // close modal
+  const closeModal = (e) => {
+    if (e.target.className === "overlay") setShowModal(false)
+    if (e.key === "Escape") setShowModal(false)
+  }
+  
+
   return (
-    <div className="App">
+    <div onClick={closeModal} onKeyDown={closeModal} className="App">
       <Navbar usersLength={users.length}/>
         <main>
           <div className='no-users'>
